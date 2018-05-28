@@ -11,5 +11,8 @@
     "url": "."
   },
   "author": "Daniel Crego <dcrego90@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
