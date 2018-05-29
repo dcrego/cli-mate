@@ -1,0 +1,23 @@
+/* Common */
+body {
+    width: 1000px;
+    margin: auto;
+    background: linear-gradient(skyblue 10%, transparent 25%);
+}
+.big {
+    font-size: 200%;
+}
+.flex-container {
+    display: flex;
+}
+/* Header */
+#title {
+    text-align: center;
+    font-size: 300%;
+    color: slategrey;
+    text-shadow: 2px 2px 5px white, -2px -2px 5px white, -2px 2px 5px white, 2px -2px 5px white;
+}
+/* Search */
+#searchBox {
+    flex-grow: 1;
+}
