@@ -5,12 +5,28 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
-        <h1 id="title">cli<span class="big">mate</span></h1>
-        <div class="flex-container">
-            <input id="searchBox" class="big" type="text" name="city" placeholder="Tu ciudad..."/>
-            <button id="searchButton" class="big">
-                <i class="material-icons">search</i>
-            </button>
+        <div id="flexBox1" class="flex-root">
+            <h1 id="title">cli<span class="big">mate</span></h1>
+            <div id="searchContainer" class="flex-container">
+                <input id="searchBox" class="single big" type="text" name="city" placeholder="Tu ciudad..."/>
+                <button id="searchButton" class="big">
+                    <i class="material-icons">search</i>
+                </button>
+            </div>
+            <div class="flex-container block-container">
+                <div id="current-weather" class="single block debug">Ahora</div>
+                <div id="today-forecast" class="double block debug">Hoy</div>
+            </div>
+            <div class="flex-container block-container">
+                <div id="current-weather" class="single block debug">Mañana</div>
+                <div id="today-forecast" class="single block debug">Hoy+2</div>
+                <div id="today-forecast" class="single block debug">Hoy+3</div>
+            </div>
+            <div class="flex-container block-container">
+                <div id="current-weather" class="single block debug">Hoy+4</div>
+                <div id="today-forecast" class="single block debug">Hoy+5</div>
+                <div id="today-forecast" class="single block debug">Hoy+6</div>
+            </div>
         </div>
     </body>
 </html>

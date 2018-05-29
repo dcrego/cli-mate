@@ -8,8 +8,26 @@ body {
 .big {
     font-size: 200%;
 }
-.flex-container {
+.flex-root {
     display: flex;
+}
+#flexBox1 {
+    flex-direction: column;
+}
+.flex-container {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+.single {
+    flex-grow: 1;
+    min-width: 245px;
+    width: 245px;
+}
+.double {
+    flex-grow: 2;
+    min-width: 500px;
+    width: 500px;
 }
 /* Header */
 #title {
@@ -19,6 +37,21 @@ body {
     text-shadow: 2px 2px 5px white, -2px -2px 5px white, -2px 2px 5px white, 2px -2px 5px white;
 }
 /* Search */
-#searchBox {
-    flex-grow: 1;
+#searchContainer {
+    margin: 5px;
+}
+/* Blocks */
+#block-container {
+    flex-wrap: wrap;
+}
+.block {
+    margin: 5px;
+}
+/* Debug */
+.debug {
+    border: 1px dashed red;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+.debug.block{
+    height: 300px;
 }
