@@ -1,6 +1,7 @@
 /* Common */
 body {
-    width: 1000px;
+    max-width: 1000px;
+    min-width: 500px;
     margin: auto;
     background: linear-gradient(skyblue 10%, transparent 25%);
 }
