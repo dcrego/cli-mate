@@ -5,7 +5,7 @@ body {
     margin: auto;
     background: linear-gradient(skyblue 10%, transparent 25%);
 }
-.big {
+.big-text {
     font-size: 200%;
 }
 .flex-root {
@@ -19,15 +19,8 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-.single {
+.growing {
     flex-grow: 1;
-    min-width: 245px;
-    width: 245px;
-}
-.double {
-    flex-grow: 2;
-    min-width: 500px;
-    width: 500px;
 }
 /* Header */
 #title {
@@ -46,6 +39,8 @@ body {
 }
 .block {
     margin: 5px;
+    min-width: 488px;
+    width: 488px;
 }
 /* Debug */
 .debug {
