@@ -7,15 +7,15 @@
     </head>
     <body>
         <div id="flexBox1" class="flex-root">
-            <h1 id="title">cli<span class="big">mate</span></h1>
+            <h1 id="title">cli<span class="big-text">mate</span></h1>
             <div id="searchContainer" class="flex-container">
-                <input id="searchBox" class="single big" type="text" name="city" placeholder="Tu ciudad..."/>
-                <button id="searchButton" class="big">
+                <input id="searchBox" class="growing big-text" type="text" name="city" placeholder="Tu ciudad..."/>
+                <button id="searchButton" class="big-text">
                     <i class="material-icons">search</i>
                 </button>
             </div>
             <div class="flex-container block-container">
-                <div id="currentWeather" class="single block debug">
+                <div id="currentWeather" class="growing block debug">
                     <div>
                         <img class="w-icon">
                         <span class="w-description"></span>
@@ -51,17 +51,10 @@
                         <span class="time"></span>
                     </div>
                 </div>
-                <div id="todaysForecast" class="double block debug">Hoy</div>
-            </div>
-            <div class="flex-container block-container">
-                <div class="single block debug">Mañana</div>
-                <div class="single block debug">Hoy+2</div>
-                <div class="single block debug">Hoy+3</div>
-            </div>
-            <div class="flex-container block-container">
-                <div class="single block debug">Hoy+4</div>
-                <div class="single block debug">Hoy+5</div>
-                <div class="single block debug">Hoy+6</div>
+                <div id="todaysForecast" class="growing block debug">Hoy</div>
+                <div class="growing block debug">Mañana</div>
+                <div class="growing block debug">Siguiente</div>
+                <div class="growing block debug">Semana</div>
             </div>
         </div>
         <script src="current-weather.js" type="text/javascript"></script>
