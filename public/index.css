@@ -38,15 +38,15 @@ body {
     flex-wrap: wrap;
 }
 .block {
+    background-color: white;
+    border: 1px solid skyblue;
+    border-radius: 5px;
     margin: 5px;
-    min-width: 488px;
-    width: 488px;
+    min-width: 478px;
+    padding: 5px;
+    width: 478px;
 }
 /* Debug */
-.debug {
-    border: 1px dashed red;
-    background-color: rgba(255, 0, 0, 0.2);
-}
 .debug.block{
     height: 300px;
 }
