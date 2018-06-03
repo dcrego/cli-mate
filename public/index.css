@@ -23,15 +23,21 @@ body {
 .growing {
     flex-grow: 1;
 }
+.center-aligned {
+    text-align: center;
+}
+.left-aligned {
+    text-align: left;
+}
+.right-aligned {
+    text-align: right;
+}
 /* Headers */
 #title {
     color: slategrey;
     font-size: 300%;
     margin-top: 2em;
     text-shadow: 2px 2px 5px white, -2px -2px 5px white, -2px 2px 5px white, 2px -2px 5px white;
-}
-h1, h2 {
-    text-align: center;
 }
 /* Search */
 #searchContainer {
@@ -65,6 +71,9 @@ h1, h2 {
 #forecast button {
     background: transparent;
     border: 0;
+}
+#forecast svg {
+    width: 100%;
 }
 /* Debug */
 .debug.block{
