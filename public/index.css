@@ -75,7 +75,3 @@ body {
 #forecast svg {
     width: 100%;
 }
-/* Debug */
-.debug.block{
-    height: 400px;
-}
