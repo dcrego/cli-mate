@@ -1096,10 +1096,10 @@
         }
     };
     var data = sample.list.slice(0, 8);
-    data = sample.list.slice(8, 16);
-    data = sample.list.slice(16, 24);
-    data = sample.list.slice(24, 32);
-    data = sample.list.slice(32, 40);
+    // data = sample.list.slice(8, 16);
+    // data = sample.list.slice(16, 24);
+    // data = sample.list.slice(24, 32);
+    // data = sample.list.slice(32, 40);
     console.log(data);
     function clearElement(e) {
         while (e.firstChild) {
@@ -1192,16 +1192,17 @@
                 var h = 2.0 * chunk.volume / boundaries.volume.max;
                 var p = document.createElementNS("http://www.w3.org/2000/svg", 'rect');
                 p.setAttribute('x', i + 0.1);
-                p.setAttribute('y', 2.0 - h);
+                p.setAttribute('y', 2.1 - h);
                 p.setAttribute('width', 0.8);
                 p.setAttribute('height', h);
+                p.setAttribute('fill-opacity', 0.9);
                 precipitations.appendChild(p);
             }
             // Temperature
             if (boundaries.temp.min < boundaries.temp.max) {
                 // Min temperature
                 var mintcy = 2.0 * (chunk.main.temp_min - boundaries.temp.min) / boundaries.temp.dif;
-                mintcy = 2.0 - mintcy;
+                mintcy = 2.1 - mintcy;
                 var mint = document.createElementNS("http://www.w3.org/2000/svg", 'circle');
                 var mintcx = i + 0.5;
                 mint.setAttribute('cx', mintcx);
@@ -1211,7 +1212,7 @@
                 tempPoints.min.push([mintcx, mintcy]);
                 // Max temperature
                 var maxtcy = 2.0 * (chunk.main.temp_max - boundaries.temp.min) / boundaries.temp.dif;
-                maxtcy = 2.0 - maxtcy;
+                maxtcy = 2.1 - maxtcy;
                 var maxt = document.createElementNS("http://www.w3.org/2000/svg", 'circle');
                 var maxtcx = i + 0.5;
                 maxt.setAttribute('cx', maxtcx);
