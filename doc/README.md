@@ -5,8 +5,10 @@
 To run this web app execute the following command:
 
 ```sh
-node ./index.js
+node ./index.js [$port]
 ```
+
+The `$port` command line argument is optional. It will be set to `80` by default.
 
 You will need to have node.js installed. [Download it](https://nodejs.org/en/download/).
 
