@@ -20,4 +20,4 @@ They are the following:
 
 * Current weather data
 * 5 day / 3 hour forecast
-* 16 day / daily forecast
+* ~~16 day / daily forecast (non-free)~~

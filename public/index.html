@@ -8,49 +8,55 @@
     <body>
         <div id="flexBox1" class="flex-root">
             <h1 id="title">cli<span class="big-text">mate</span></h1>
-            <div id="searchContainer" class="flex-container">
+            <div id="searchContainer" class="flex-row">
                 <input id="searchBox" class="growing big-text" type="text" name="city" placeholder="Tu ciudad..."/>
                 <button id="searchButton" class="big-text">
                     <i class="material-icons">search</i>
                 </button>
             </div>
-            <div class="flex-container block-container">
-                <div id="currentWeather" class="growing block debug">
-                    Ahora
-                    <div>
-                        <img class="w-icon">
-                        <span class="w-description"></span>
-                    </div>
-                    <div>
-                        Temperatura:
-                        <span class="m-temp-c"></span>ºC
-                    </div>
-                    <div>
-                        Humedad:
-                        <span class="m-humid"></span>%
-                    </div>
-                    <div>
-                        Presión:
-                        <span class="m-press"></span>hPa
-                    </div>
-                    <div>
-                        Viento:
-                        <span class="wind-s"></span>m/s
-                        <span class="wind-r"></span>º
-                    </div>
-                    <div>
-                        Nubes:
-                        <span class="clouds"></span>%
-                    </div>
-                    <div>
-                        Última hora:
-                        <span class="time"></span>
+            <div class="flex-row">
+                <div class="growing block debug">
+                    <div id="currentWeather" class="flex-col">
+                        <h2>Ahora</h2>
+                        <div>
+                            <img class="w-icon">
+                            <span class="w-description"></span>
+                        </div>
+                        <div>
+                            Temperatura:
+                            <span class="m-temp-c"></span>ºC
+                        </div>
+                        <div>
+                            Humedad:
+                            <span class="m-humid"></span>%
+                        </div>
+                        <div>
+                            Presión:
+                            <span class="m-press"></span>hPa
+                        </div>
+                        <div>
+                            Viento:
+                            <span class="wind-s"></span>m/s
+                            <span class="wind-r"></span>º
+                        </div>
+                        <div>
+                            Nubes:
+                            <span class="clouds"></span>%
+                        </div>
+                        <div>
+                            Última hora:
+                            <span class="time"></span>
+                        </div>
                     </div>
                 </div>
-                <div id="todaysForecast" class="growing block debug">Hoy</div>
-                <div class="growing block debug">Mañana</div>
-                <div class="growing block debug">Siguiente</div>
-                <div class="growing block debug">Semana</div>
+                <div id="forecast" class="growing block debug flex-col">
+                    <h2>Previsión</h2>
+                    <div class="growing flex-row">
+                        <button class="material-icons">keyboard_arrow_left</button>
+                        <div class="growing">...</div>
+                        <button class="material-icons">keyboard_arrow_right</button>
+                    </div>
+                </div>
             </div>
         </div>
         <script src="current-weather.js" type="text/javascript"></script>
