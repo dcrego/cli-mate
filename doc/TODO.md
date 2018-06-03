@@ -1,6 +1,6 @@
 # To Do
 
-* Add REST service client.
+* Send city id.
 * Add progress bars.
 * Optimize auto-completion.
 * Add precipitations and temperature scales.
