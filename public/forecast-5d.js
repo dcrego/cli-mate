@@ -1098,11 +1098,6 @@ const forecast = {
             "country": "none"
         }
     };
-    function clearElement(e) {
-        while (e.firstChild) {
-            e.removeChild(e.firstChild);
-        }
-    }
     function formatTime(date) {
         var m = date.getMinutes().toString();
         if (m.length < 2) {
@@ -1131,7 +1126,6 @@ const forecast = {
         return path + 'Z';
     }
     function render() {
-        console.log(forecast.page);
         var data = sample.list.slice(forecast.page * 8, forecast.page * 8 + 8);
         // Find elements
         var precipitations = $('#forecast svg #precipitations')[0];

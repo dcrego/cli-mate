@@ -5,14 +5,16 @@
     <link href="index.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="common.js" type="text/javascript"></script>
 </head>
 
 <body>
+    <datalist id="cities"></datalist>
     <div id="flexBox1" class="flex-root">
         <h1 id="title" class="center-aligned">cli<span class="big-text">mate</span>
         </h1>
         <div id="searchContainer" class="flex-row">
-            <input id="searchBox" class="growing big-text" type="text" name="city" placeholder="Tu ciudad..." />
+            <input id="searchBox" class="growing big-text" type="text" placeholder="Tu ciudad..." list="cities" />
             <button id="searchButton" class="big-text">
                 <i class="material-icons">search</i>
             </button>
@@ -85,6 +87,7 @@
             </div>
         </div>
     </div>
+    <script src="cities.js" type="text/javascript"></script>
     <script src="current-weather.js" type="text/javascript"></script>
     <script src="forecast-5d.js" type="text/javascript"></script>
 </body>
