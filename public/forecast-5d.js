@@ -1,3 +1,6 @@
+const forecast = {
+    page: 0
+};
 (function () {
     const sample = {
         "cod": "200",
@@ -1095,12 +1098,6 @@
             "country": "none"
         }
     };
-    var data = sample.list.slice(0, 8);
-    // data = sample.list.slice(8, 16);
-    // data = sample.list.slice(16, 24);
-    // data = sample.list.slice(24, 32);
-    // data = sample.list.slice(32, 40);
-    console.log(data);
     function clearElement(e) {
         while (e.firstChild) {
             e.removeChild(e.firstChild);
@@ -1133,7 +1130,9 @@
         }
         return path + 'Z';
     }
-    function render(data) {
+    function render() {
+        console.log(forecast.page);
+        var data = sample.list.slice(forecast.page * 8, forecast.page * 8 + 8);
         // Find elements
         var precipitations = $('#forecast svg #precipitations')[0];
         var minTemp = $('#forecast svg #minTemp')[0];
@@ -1147,6 +1146,7 @@
         clearElement(precipitations);
         clearElement(minTemp);
         clearElement(maxTemp);
+        clearElement(icons);
         clearElement(times);
         // Boundaries
         var boundaries = {
@@ -1248,5 +1248,20 @@
         fd.innerText = formatDate(data[0].date);
         ld.innerText = formatDate(data[7].date);
     }
-    render(data);
+    function nextPage() {
+        if (forecast.page < 4) {
+            forecast.page++;
+        }
+        render();
+    }
+    function prevPage() {
+        if (forecast.page > 0) {
+            forecast.page--;
+        }
+        render();
+    }
+    var navigationButtons = $('#forecast .navigation');
+    navigationButtons[0].onclick = prevPage;
+    navigationButtons[1].onclick = nextPage;
+    render();
 })();
