@@ -4,11 +4,12 @@ var updateForecast;
         page: 0,
         data: null
     };
+    const forecastE = $('#forecast');
     const appid = 'ea8fe85841834e341e0f0c4f16084dfd';
     const lang = 'es';
-    const forecastE = $('#forecast');
+    const units = 'metric';
     updateForecast = function(id) {
-        $.get(`http://api.openweathermap.org/data/2.5/forecast?lang=${lang}&id=${id}&appid=${appid}`, (data, status) => {
+        $.get(`http://api.openweathermap.org/data/2.5/forecast?units=${units}&lang=${lang}&id=${id}&appid=${appid}`, (data, status) => {
             if (status == 'success') {
                 forecast.data = data;
                 render();

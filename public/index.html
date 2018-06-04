@@ -18,42 +18,31 @@
             <button id="searchButton" class="big-text material-icons">search</button>
         </div>
         <div class="flex-row">
-            <div class="growing block" hidden>
+            <div id="currentWeatherContainer" class="growing block flex-col" hidden>
                 <div id="currentWeather" class="flex-col">
-                    <h2 class="center-aligned">Ahora</h2>
-                    <div>
-                        <img class="w-icon">
-                        <span class="w-description"></span>
+                    <div class="flex-row">
+                        <div class="growing big-text"><output id="currentTemp"></output> ºC</div>
+                        <div class="right-aligned">
+                            <div>
+                                Humedad:
+                                <span class="m-humid"></span>%
+                            </div>
+                            <div>
+                                Presión:
+                                <span class="m-press"></span>hPa
+                            </div>
+                            <div>
+                                Nubes:
+                                <span class="clouds"></span>%
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        Temperatura:
-                        <span class="m-temp-c"></span>ºC
-                    </div>
-                    <div>
-                        Humedad:
-                        <span class="m-humid"></span>%
-                    </div>
-                    <div>
-                        Presión:
-                        <span class="m-press"></span>hPa
-                    </div>
-                    <div>
-                        Viento:
-                        <span class="wind-s"></span>m/s
-                        <span class="wind-r"></span>º
-                    </div>
-                    <div>
-                        Nubes:
-                        <span class="clouds"></span>%
-                    </div>
-                    <div>
-                        Última hora:
-                        <span class="time"></span>
-                    </div>
+                </div>
+                <div class="right-aligned">
+                    Última actualización: <span id="lastUpdate"></span>
                 </div>
             </div>
             <div id="forecast" class="growing block flex-col" hidden>
-                <h2 class="center-aligned">Previsión</h2>
                 <div class="growing flex-row">
                     <button class="material-icons navigation">keyboard_arrow_left</button>
                     <div class="growing">

@@ -1,0 +1,92 @@
+{
+    "01d": {
+        "src": "pexels-photo-206904.jpeg",
+        "href": "https://www.pexels.com/photo/backlit-clouds-dawn-desert-206904/",
+        "mime": "image/jpeg"
+    },
+    "02d": {
+        "src": "pexels-photo-296234.jpeg",
+        "href": "https://www.pexels.com/photo/air-atmosphere-blue-blue-sky-296234/",
+        "mime": "image/jpeg"
+    },
+    "03d": {
+        "src": "pexels-photo-314726.jpeg",
+        "href": "https://www.pexels.com/photo/air-atmosphere-blue-blue-sky-314726/",
+        "mime": "image/jpeg"
+    },
+    "04d": {
+        "src": "clouds-cloudporn-weather-lookup-158163.jpeg",
+        "href": "https://www.pexels.com/photo/grey-white-clouds-158163/",
+        "mime": "image/jpeg"
+    },
+    "09d": {
+        "src": "pexels-photo-270410.jpeg",
+        "href": "https://www.pexels.com/photo/back-light-beads-blur-bubble-270410/",
+        "mime": "image/jpeg"
+    },
+    "10d": {
+        "src": "pexels-photo-460687.jpeg",
+        "href": "https://www.pexels.com/photo/arid-bryce-canyon-clouds-color-460687/",
+        "mime": "image/jpeg"
+    },
+    "11d": {
+        "src": "sky-thunderstorm-landscape-flash-53411.jpeg",
+        "href": "https://www.pexels.com/photo/lightning-in-land-53411/",
+        "mime": "image/jpeg"
+    },
+    "13d": {
+        "src": "pexels-photo-1005763.jpeg",
+        "href": "https://www.pexels.com/photo/mountains-covered-with-clouds-1005763/",
+        "mime": "image/jpeg"
+    },
+    "50d": {
+        "src": "road-fog-foggy-mist.jpg",
+        "href": "https://www.pexels.com/photo/road-fog-foggy-mist-5230/",
+        "mime": "image/jpeg"
+    },
+    "01n": {
+        "src": "pexels-photo-713664.jpeg",
+        "href": "https://www.pexels.com/photo/full-moon-illustration-713664/",
+        "mime": "image/jpeg"
+    },
+    "02n": {
+        "src": "pexels-photo-239107.jpeg",
+        "href": "https://www.pexels.com/photo/astronomy-cloud-clouds-cosmos-239107/",
+        "mime": "image/jpeg"
+    },
+    "03n": {
+        "src": "pexels-photo-577289.jpeg",
+        "href": "https://www.pexels.com/photo/clouds-dark-moon-moonlight-577289/",
+        "mime": "image/jpeg"
+    },
+    "04n": {
+        "src": "pexels-photo-416920.jpeg",
+        "href": "https://www.pexels.com/photo/clouds-dark-dark-clouds-darkness-416920/",
+        "mime": "image/jpeg"
+    },
+    "09n": {
+        "src": "pexels-photo-459439.jpeg",
+        "href": "https://www.pexels.com/photo/abstract-blur-bubble-cold-459439/",
+        "mime": "image/jpeg"
+    },
+    "10n": {
+        "src": "pexels-photo-119569.jpeg",
+        "href": "https://www.pexels.com/photo/black-posts-on-black-pavement-beneath-falling-rain-119569/",
+        "mime": "image/jpeg"
+    },
+    "11n": {
+        "src": "pexels-photo-255347.png",
+        "href": "https://www.pexels.com/photo/lightning-in-sky-at-night-255347/",
+        "mime": "image/png"
+    },
+    "13n": {
+        "src": "pexels-photo-280204.jpeg",
+        "href": "https://www.pexels.com/photo/christmas-home-house-light-280204/",
+        "mime": "image/jpeg"
+    },
+    "50n": {
+        "src": "foggy-mist-forest-trees-42263.jpeg",
+        "href": "https://www.pexels.com/photo/night-building-forest-trees-42263/",
+        "mime": "image/jpeg"
+    }
+}
