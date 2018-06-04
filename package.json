@@ -4,7 +4,8 @@
   "description": "Weather forecast web app",
   "main": "index.js",
   "scripts": {
-    "test": "node ./index.js"
+    "start": "node ./index.js 80",
+    "test": "node ./index.js 8080"
   },
   "repository": {
     "type": "git",
