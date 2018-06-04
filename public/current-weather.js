@@ -1,17 +1,19 @@
+var updateWeather;
 (function () {
     const weather = {
         data: null
     }
     const appid = 'ea8fe85841834e341e0f0c4f16084dfd';
-    var id = 3109453;
-    var lang = 'es';
-    $.get(`http://api.openweathermap.org/data/2.5/weather?lang=${lang}&id=${id}&appid=${appid}`, (data, status) => {
-        if (status == 'success') {
-            weather.data = data;
-            render();
-        }
-    });
     const currentWeather = $('#currentWeather');
+    const lang = 'es';
+    updateWeather = function(id) {
+        $.get(`http://api.openweathermap.org/data/2.5/weather?lang=${lang}&id=${id}&appid=${appid}`, (data, status) => {
+            if (status == 'success') {
+                weather.data = data;
+                render();
+            }
+        });
+    }
     function render() {
         if (weather.data.cod == 200) {
             currentWeather.find('.w-icon').attr('src', utils.getIconUrl(weather.data.weather[0].icon));
@@ -26,6 +28,7 @@
             currentWeather.find('.clouds').text(weather.data.clouds.all);
             var date = new Date(weather.data.dt * 1000);
             currentWeather.find('.time').text(`${utils.formatDate(date)} ${utils.formatTime(date)}`);
+            currentWeather.parent()[0].hidden = false;
         }
     }
 })();

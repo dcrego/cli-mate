@@ -1,17 +1,20 @@
+var updateForecast;
 (function () {
     const forecast = {
         page: 0,
         data: null
     };
     const appid = 'ea8fe85841834e341e0f0c4f16084dfd';
-    var id = 3109453;
-    var lang = 'es';
-    $.get(`http://api.openweathermap.org/data/2.5/forecast?lang=${lang}&id=${id}&appid=${appid}`, (data, status) => {
-        if (status == 'success') {
-            forecast.data = data;
-            render();
-        }
-    });
+    const lang = 'es';
+    const forecastE = $('#forecast');
+    updateForecast = function(id) {
+        $.get(`http://api.openweathermap.org/data/2.5/forecast?lang=${lang}&id=${id}&appid=${appid}`, (data, status) => {
+            if (status == 'success') {
+                forecast.data = data;
+                render();
+            }
+        });
+    }
     function composePath(points) {
         var path = '';
         var primitive = 'M';
@@ -21,7 +24,6 @@
         }
         return path + 'Z';
     }
-    const forecastE = $('#forecast');
     function render() {
         if (!forecast.data) {
             return false;
@@ -142,6 +144,7 @@
         tempPath.setAttribute('d', composePath(points));
         fd.innerText = utils.formatDate(data[0].date);
         ld.innerText = utils.formatDate(data[7].date);
+        forecastE[0].hidden = false;
         return true;
     }
     function nextPage() {

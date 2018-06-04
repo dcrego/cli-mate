@@ -1,5 +1,5 @@
+const cityIds = {};
 (function () {
-    cityIds = {};
     $.get('./owm/city.list.json', (data, status) => {
         if (status == 'success') {
             var cities = $('#cities')[0];

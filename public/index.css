@@ -61,6 +61,9 @@ body {
     margin: 5px;
     padding: 5px;
 }
+.block[hidden] {
+    display: none;
+}
 #currentWeather {
     width: 188px;
     margin: auto;
